@@ -74,7 +74,3 @@
       @apply bg-background text-foreground;
     }
   }
-
-  body {
-    background-color: #0F172A; /* Choose your desired background color */
-  }
