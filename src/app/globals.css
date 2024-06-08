@@ -74,3 +74,29 @@
       @apply bg-background text-foreground;
     }
   }
+
+  .icons8-gmail {
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgwIiBoZWlnaHQ9IjQ4MCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij4KPHBhdGggZmlsbD0iIzRjYWY1MCIgZD0iTTQ1LDE2LjJsLTUsMi43NWwtNSw0Ljc1TDM1LDQwaDdjMS42NTcsMCwzLTEuMzQzLDMtM1YxNi4yeiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMxZTg4ZTUiIGQ9Ik0zLDE2LjJsMy42MTQsMS43MUwxMywyMy43VjQwSDZjLTEuNjU3LDAtMy0xLjM0My0zLTNWMTYuMnoiPjwvcGF0aD48cG9seWdvbiBmaWxsPSIjZTUzOTM1IiBwb2ludHM9IjM1LDExLjIgMjQsMTkuNDUgMTMsMTEuMiAxMiwxNyAxMywyMy43IDI0LDMxLjk1IDM1LDIzLjcgMzYsMTciPjwvcG9seWdvbj48cGF0aCBmaWxsPSIjYzYyODI4IiBkPSJNMywxMi4yOThWMTYuMmwxMCw3LjVWMTEuMkw5Ljg3Niw4Ljg1OUM5LjEzMiw4LjMwMSw4LjIyOCw4LDcuMjk4LDhoMEM0LjkyNCw4LDMsOS45MjQsMywxMi4yOTh6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2ZiYzAyZCIgZD0iTTQ1LDEyLjI5OFYxNi4ybC0xMCw3LjVWMTEuMmwzLjEyNC0yLjM0MUMzOC44NjgsOC4zMDEsMzkuNzcyLDgsNDAuNzAyLDhoMCBDNDMuMDc2LDgsNDUsOS45MjQsNDUsMTIuMjk4eiI+PC9wYXRoPgo8L3N2Zz4=') 50% 50% no-repeat;
+    background-size: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .icons8-gmail {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1280px) {
+    .icons8-gmail {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .icons8-gmail {
+        width: 56px;
+        height: 56px;
+    }
+}
