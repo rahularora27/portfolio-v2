@@ -4,7 +4,7 @@
 
   @layer base {
     :root {
-      --background: 0 0% 100%;
+      --background: 0 0% 93%;
       --foreground: 222.2 84% 4.9%;
 
       --card: 0 0% 100%;
@@ -99,4 +99,25 @@
         width: 56px;
         height: 56px;
     }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 10px;
+}
+
+ .dark {
+  ::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 10px;
+  }
 }
