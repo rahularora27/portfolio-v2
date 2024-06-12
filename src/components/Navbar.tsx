@@ -16,7 +16,7 @@ export const Navbar: React.FC = () => {
   const commonClassName = "text-lg font-semibold cursor-pointer text-black hover:text-blue-500 dark:text-white dark:hover:text-yellow-300";
 
   return (
-    <nav className="p-4 z-50 flex justify-between">
+    <nav className="p-4 fixed top-0 left-0 right-0 z-50 flex justify-between">
       <ul className="flex space-x-4 items-center">
         <li>
           <Link className={commonClassName} href={isAboutPage ? "/" : "/about"}>

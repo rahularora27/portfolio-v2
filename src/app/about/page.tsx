@@ -50,9 +50,9 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section className="flex items-center justify-evenly min-h-screen">
-      <div className="mx-auto px-4 flex flex-col md:flex-row items-center md:text-left text-center">
-        <div className="overflow-hidden md:mr-8 mb-4 md:mb-0">
+    <section className="flex items-center justify-evenly min-h-screen mt-16 md:mt-0">
+      <div className="mx-auto px-4 flex flex-col xl:flex-row items-center xl:text-left text-center">
+        <div className="overflow-hidden xl:mr-8 mb-4 xl:mb-0">
           <Image
             src={rahul}
             alt="Rahul Arora"
@@ -67,8 +67,8 @@ const About: React.FC = () => {
           Hi there! I'm Rahul Arora, a 3rd-year BTech CSE student at Manipal University Jaipur, passionate about building innovative and user-friendly web applications. I'm constantly learning and exploring new technologies, and I'm excited to share my journey and creations with you. This portfolio showcases some of my projects and experiences. I'd love to hear your thoughts, so feel free to browse around and connect with me!
           </p>
         <div className="flex flex-col items-center justify-evenly space-y-2">
-          <h1 className='font-semibold text-3xl'>Tech Stack</h1>
-          <div className="flex flex-row items-center justify-evenly">
+          <h1 className='font-semibold text-3xl'>Technical Skills</h1>
+          <div className="flex flex-row items-center">
             <AnimatedTooltip items={people} />
           </div>
         </div>

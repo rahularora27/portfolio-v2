@@ -26,13 +26,13 @@ export default function HomePage() {
        </div>
        <div className="flex items-center justify-center space-x-2">
         <a href="https://github.com/rahularora27" target="_blank" rel="noopener noreferrer">
-         <FaGithub className='fill-black dark:fill-white h-4 w-4 md:h-6 md:w-6 xl:h-12 xl:w-12' />
+         <FaGithub className='fill-black dark:fill-white h-6 w-6 xl:h-12 xl:w-12' />
         </a>
         <a href="https://www.linkedin.com/in/rahularora2715" target="_blank" rel="noopener noreferrer">
-         <FaLinkedin className='fill-blue-500 dark:fill-yellow-300 h-4 w-4 md:h-6 md:w-6 xl:h-12 xl:w-12' />
+         <FaLinkedin className='fill-blue-500 dark:fill-yellow-300 h-6 w-6 xl:h-12 xl:w-12' />
         </a>
         <a href="https://x.com/RahulArora2715" target="_blank" rel="noopener noreferrer">
-         <FaTwitter className='fill-blue-500 dark:fill-yellow-300 h-4 w-4 md:h-6 md:w-6 xl:h-12 xl:w-12' />
+         <FaTwitter className='fill-blue-500 dark:fill-yellow-300 h-6 w-6 xl:h-12 xl:w-12' />
         </a>
         <a href="mailto:rahularora2715@gmail.com" target="_blank" rel="noopener noreferrer">
          <div className="icons8-gmail"></div>
