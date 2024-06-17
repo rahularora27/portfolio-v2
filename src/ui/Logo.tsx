@@ -5,38 +5,27 @@ import Link from 'next/link';
 const MotionLink = motion(Link);
 
 const Logo = () => {
-  const isDarkMode = document.documentElement.classList.contains('dark');
 
-  const lightModeColors = [
-    "#FDE047", // Background
-    "rgb(254, 116, 254)",
-    "rgb(120, 238, 255)",
-    "rgb(255, 179, 1)",
+  const backgroundColors = [
+    "#FDE047",
+    "#3B82F6",
     "rgb(76, 248, 1)",
-    "rgb(235, 139, 83)"
-  ];
-  const darkModeColors = [
-    "#3B82F6", // Background
-    "rgb(1, 139, 83)",
+    "rgb(120, 238, 255)",
+    "rgb(235, 183, 83)",
+    "rgb(1, 235, 83)",
     "rgba(253, 29, 29, 1)",
-    "rgba(131, 58, 180, 1)", 
-    "rgb(1, 139, 170)",
+    "rgb(198, 121, 239)", 
+    "rgb(1, 229, 170)"
   ];
-
-  const backgroundColors = isDarkMode ? darkModeColors : lightModeColors;
 
   return (
     <div className='flex items-center justify-center'>
       <MotionLink
         href='/'
-        className='w-16 h-16 flex items-center justify-center rounded-full text-2xl font-bold'
-        style={{
-          backgroundColor: backgroundColors[0],
-          color: isDarkMode ? '#FFFFFF' : '#000000',
-        }}
+        className='w-16 h-16 flex items-center justify-center rounded-full text-2xl font-bold bg-blue-500 text-white dark:bg-yellow-300 dark:text-slate-950'
         whileHover={{
           backgroundColor: backgroundColors,
-          transition: { duration: 1, repeat: Infinity},
+          transition: { duration: 1, repeat: Infinity}
         }}
       >
         RA

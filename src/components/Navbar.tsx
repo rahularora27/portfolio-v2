@@ -4,7 +4,7 @@ import React from "react";
 import useThemeSwitcher from "../hooks/useThemeSwitcher";
 import { SunIcon, MoonIcon } from "./Icons";
 import Link from "next/link";
-import Logo from "../ui/Logo";
+import Logo from '../ui/Logo';
 
 export const Navbar: React.FC = () => {
   const [mode, setMode] = useThemeSwitcher();
@@ -14,7 +14,9 @@ export const Navbar: React.FC = () => {
   return (
     <nav className="p-4 fixed top-0 left-0 right-0 z-50 flex justify-between">
       <ul className="flex space-x-4 items-center">
-        <Logo />
+        <div className="hidden md:flex">
+          <Logo />
+        </div>
         <li className={commonClassName}>
           <Link href="/about">
             About
