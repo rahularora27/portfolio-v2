@@ -1,31 +1,28 @@
-// components/Navbar.tsx
 "use client";
 
 import React from "react";
-import { usePathname } from "next/navigation";
 import useThemeSwitcher from "../hooks/useThemeSwitcher";
 import { SunIcon, MoonIcon } from "./Icons";
 import Link from "next/link";
+import Logo from "../ui/Logo";
 
 export const Navbar: React.FC = () => {
   const [mode, setMode] = useThemeSwitcher();
-  const pathname = usePathname();
-  const isAboutPage = pathname === "/about";
-  const isProjectsPage = pathname === "/projects";
 
-  const commonClassName = "text-lg font-semibold cursor-pointer text-black hover:text-blue-500 dark:text-white dark:hover:text-yellow-300";
+  const commonClassName = "text-lg font-semibold cursor-pointer text-black hover:text-blue-500 dark:text-white dark:hover:text-yellow-300 hover:scale-105 transition-transform duration-500";
 
   return (
     <nav className="p-4 fixed top-0 left-0 right-0 z-50 flex justify-between">
       <ul className="flex space-x-4 items-center">
-        <li>
-          <Link className={commonClassName} href={isAboutPage ? "/" : "/about"}>
-            {isAboutPage ? "Home" : "About"}
+        <Logo />
+        <li className={commonClassName}>
+          <Link href="/about">
+            About
           </Link>
         </li>
-        <li>
-          <Link className={commonClassName} href={isProjectsPage ? "/" : "/projects"}>
-            {isProjectsPage ? "Home" : "Projects"}
+        <li className={commonClassName}>
+          <Link href="/projects">
+            Projects
           </Link>
         </li>
       </ul>
@@ -37,8 +34,8 @@ export const Navbar: React.FC = () => {
         >
           Resume
         </a>
-        <button onClick={() => setMode(mode === "light" ? "dark" : "light")}>
-          {mode === "dark" ? <SunIcon className={"fill-dark"} /> : <MoonIcon className={"fill-dark"} />}
+        <button onClick={() => typeof setMode === "function" && setMode(mode === "light" ? "dark" : "light")}>
+          {mode === "dark" ? <MoonIcon className={"fill"} /> : <SunIcon className={"fill"} />}
         </button>
       </div>
     </nav>
