@@ -6,7 +6,7 @@ import { projects } from "../data";
 export default function page() {
   return (
     <div className="max-w-5xl mx-auto px-8">
-      <HoverEffect items={projects} />
+      <HoverEffect items={projects.map(project => ({ ...project, link: "" }))} />
     </div>
   );
 }
