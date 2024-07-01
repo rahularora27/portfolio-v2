@@ -12,12 +12,12 @@ export const Navbar: React.FC = () => {
   const commonClassName = "text-base md:text-lg font-semibold cursor-pointer text-black hover:text-blue-500 dark:text-white dark:hover:text-yellow-300 hover:scale-105 transition-transform duration-500";
 
   return (
-    <nav className="p-4 fixed top-0 left-0 right-0 z-50 flex justify-between">
+    <nav className="p-4 top-0 left-0 right-0 z-50 flex justify-between">
       <ul className="flex space-x-4 items-center">
         <div className="hidden md:flex">
           <Logo />
         </div>
-        <li className="md:hidden text-lg font-semibold cursor-pointer text-black hover:text-blue-500 dark:text-white dark:hover:text-yellow-300 hover:scale-105 transition-transform duration-500">
+        <li className="md:hidden text-base font-semibold cursor-pointer text-black hover:text-blue-500 dark:text-white dark:hover:text-yellow-300 hover:scale-105 transition-transform duration-500">
           <Link href="/">
             Home
           </Link>
