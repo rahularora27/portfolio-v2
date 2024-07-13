@@ -19,12 +19,5 @@ export const projects = [
       "Library Management System using PHP, HTML, Tailwind, JavaScript, and MySQL.",
     githubLink: "https://github.com/rahularora27/Library-Management-System.git",
     readMoreLink: "https://example.com/read-more/library-management",
-  },
-  {
-    title: "Portfolio Website",
-    description:
-      "Portfolio website using Next.js, Tailwind CSS, and TypeScript.",
-    githubLink: "https://github.com/rahularora27/portfolio-v2",
-    readMoreLink: "https://example.com/read-more/library-management",
   }
 ];
