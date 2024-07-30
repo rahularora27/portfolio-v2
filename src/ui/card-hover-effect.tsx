@@ -118,7 +118,7 @@ export const CardDescription = ({
           </Link>
         )}
         {readMoreLink && (
-          <Link href={readMoreLink} className="text-lg px-4 py-2 text-black dark:text-white rounded-lg font-bold" target="_blank" rel="noopener noreferrer">
+          <Link href={readMoreLink} className="text-lg px-4 py-2 text-black dark:text-white rounded-lg font-bold">
             Read More
           </Link>
         )}
