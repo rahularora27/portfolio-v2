@@ -6,13 +6,10 @@ import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 export default function HomePage() {
     const words = [
       {
-        text: "Hey!",
+        text: "Hey,",
       },
       {
-        text: "I",
-      },
-      {
-        text: "am",
+        text: "I'm",
       },
       {
         text: "Rahul.",
@@ -45,8 +42,8 @@ export default function HomePage() {
       <div className="md:hidden flex justify-center items-center min-h-screen">
         <div className="container flex flex-col items-start font-bold space-y-4">
           <div className="text-7xl">
-            Hey! I am 
-            <span className="block text-8xl text-blue-500 dark:text-yellow-300">Rahul.</span>
+            Hey, I'm 
+            <span className="block text-8xl text-blue-500 dark:text-yellow-300">Rahul</span>
           </div>
         <div className="flex space-x-2">
           <a href="https://github.com/rahularora27" target="_blank" rel="noopener noreferrer">
