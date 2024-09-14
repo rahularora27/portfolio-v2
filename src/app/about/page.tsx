@@ -64,7 +64,7 @@ const About: React.FC = () => {
         <div className='max-w-2xl space-y-4'>
           <h1 className="text-3xl font-bold text-center">About Me</h1>
           <p className="text-lg font-semibold">
-          Hi there! I'm Rahul Arora, a 3rd-year BTech CSE student at Manipal University Jaipur, passionate about building innovative and user-friendly web applications. I'm constantly learning and exploring new technologies, and I'm excited to share my journey and creations with you. This portfolio showcases some of my projects and experiences. I'd love to hear your thoughts, so feel free to browse around and connect with me!
+          Hi there! I'm Rahul Arora, a Final year B.Tech CSE student at Manipal University Jaipur, passionate about building innovative and user-friendly web applications. I'm constantly learning and exploring new technologies, and I'm excited to share my journey and creations with you. This portfolio showcases some of my projects and experiences. I'd love to hear your thoughts, so feel free to browse around and connect with me!
           </p>
         <div className="flex flex-col items-center justify-evenly space-y-2">
           <h1 className='font-semibold text-3xl'>Technical Skills</h1>
