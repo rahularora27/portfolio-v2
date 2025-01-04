@@ -2,7 +2,7 @@ import { cn } from "../utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLink } from "react-icons/fa";
 
 export const HoverEffect = ({
   items,
@@ -11,7 +11,7 @@ export const HoverEffect = ({
   items: {
     title: string;
     description: string;
-    link: string;
+    projectLink?: string;
     githubLink?: string;
     readMoreLink?: string;
   }[];
@@ -28,7 +28,7 @@ export const HoverEffect = ({
     >
       {items.map((item, idx) => (
         <div
-          key={item.link}
+          key={item.title}
           className="relative group block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -56,6 +56,7 @@ export const HoverEffect = ({
               description={item.description}
               githubLink={item.githubLink}
               readMoreLink={item.readMoreLink}
+              projectLink={item.projectLink}
             />
           </Card>
         </div>
@@ -102,11 +103,13 @@ export const CardDescription = ({
   description,
   githubLink,
   readMoreLink,
+  projectLink,
 }: {
   className?: string;
   description: React.ReactNode;
   githubLink?: string;
   readMoreLink?: string;
+  projectLink?: string;
 }) => {
   return (
     <div className={cn("mt-8 text-zinc-800 dark:text-zinc-400 tracking-wide leading-relaxed text-base", className)}>
@@ -115,6 +118,11 @@ export const CardDescription = ({
         {githubLink && (
           <Link href={githubLink} className="text-3xl px-4 py-2 text-black dark:text-white" target="_blank" rel="noopener noreferrer">
             <FaGithub />
+          </Link>
+        )}
+        {projectLink && (
+          <Link href={projectLink} className="text-lg px-4 py-2 text-blue-600 dark:text-yellow-300 font-bold" target="_blank" rel="noopener noreferrer">
+            <FaLink />
           </Link>
         )}
         {readMoreLink && (

@@ -8,7 +8,7 @@ const About: React.FC = () => {
     {
       id: 1,
       name: "React",
-      designation: "",
+      designation: "", 
       image: images.react
         
     },
